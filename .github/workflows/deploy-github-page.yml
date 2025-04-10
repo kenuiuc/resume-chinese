@@ -33,7 +33,7 @@ jobs:
             -w "/workdir" \
             texlive/texlive \
             latexmk \
-            -pdf ken_wang_resume.tex \
+            -pdf ken_wang_resume_chinese.tex \
             -pdflatex=lualatex \
             -outdir=docs \
             -auxdir=/tmp/latexmk
