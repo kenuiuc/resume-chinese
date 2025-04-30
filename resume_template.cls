@@ -261,6 +261,21 @@
                     & \text{\large #3} \\*
 }
 
+% Define the 'internships' environment
+\newlength{\leftIntern}
+\setlength{\leftIntern}{4.0cm}
+\newlength{\rightIntern}
+\setlength{\rightIntern}{4.0cm}
+
+\newcolumntype{X}[1]{>{\hfill}m{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}p{\rightIntern}}
+
+\newenvironment{internships}{
+  \begin{longtable}{X{\leftIntern}|Y}
+}{
+  \end{longtable}
+}
+
 % \internship
 % {time} {company name}
 %        {title}
