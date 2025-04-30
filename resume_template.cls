@@ -250,38 +250,32 @@
 }
 
 \newcommand\emptySeparator{
-    & \\
-}
-
-% \degree
-% {time} {degree name}
-%        {school name}
-\newcommand\degree[3]{
-    \textbf{\large#1} & \textbf{\large{#2}} \\*
-                    & \text{\large #3} \\*
+   & \\ 
 }
 
 % Define the 'internships' environment
 \newlength{\leftIntern}
-\setlength{\leftIntern}{4.0cm}
+\setlength{\leftIntern}{1.5cm}
 \newlength{\rightIntern}
-\setlength{\rightIntern}{4.0cm}
-
+\setlength{\rightIntern}{8.0cm}
 \newcolumntype{X}[1]{>{\hfill}m{#1}}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}p{\rightIntern}}
-
 \newenvironment{internships}{
   \begin{longtable}{X{\leftIntern}|Y}
 }{
   \end{longtable}
 }
 
+% \education
+% {time}{degree}
+% {location}{school}
+%
 % \internship
-% {time} {company name}
-%        {title}
-\newcommand\internship[3]{
-    \textbf{\large#1} & \textbf{\large{#2}} \\*
-                    & \text{\large #3} \\*
+% {time}{title}
+% {location}{company}
+\newcommand\internship[4]{
+    \textbf{\large #1} & \textbf{\large{#2}} \\*
+     \text{\large #3}  & \text{\large #4} \\*
 }
 
 \newcommand*\twocolumnsection[2]{
