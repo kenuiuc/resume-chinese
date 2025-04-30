@@ -1,6 +1,6 @@
 \ProvidesClass{yaac-another-awesome-cv}[2018/07/19  v1.9.2 'YAAC: Another Awesome CV' Class]
 
-\LoadClass[letterpaper, 10pt]{ctexart}
+\LoadClass[a4paper, 10pt]{ctexart}
 
 \newif\if@showLinks   \@showLinksfalse
 
@@ -254,9 +254,17 @@
 }
 
 % \degree
-% {location} {degree name}
-%            {school name}
+% {time} {degree name}
+%        {school name}
 \newcommand\degree[3]{
+    \textbf{\large#1} & \textbf{\large{#2}} \\*
+                    & \text{\large #3} \\*
+}
+
+% \internship
+% {time} {company name}
+%        {title}
+\newcommand\internship[3]{
     \textbf{\large#1} & \textbf{\large{#2}} \\*
                     & \text{\large #3} \\*
 }
