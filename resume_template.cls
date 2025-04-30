@@ -130,10 +130,10 @@
 
 %New length definition
 \newlength{\rightcolumnlength}
-\setlength{\rightcolumnlength}{16cm}
+\setlength{\rightcolumnlength}{20cm}
 
 \newlength{\leftcolumn}
-\setlength{\leftcolumn}{4.0cm}
+\setlength{\leftcolumn}{3.0cm}
 
 % Font Awesome icons aliases
 \newcommand{\mailSymbol}{\faAt}
@@ -249,13 +249,9 @@
                 & \footnotesize{\foreach \n in {#6}{\cvtag{\n}}} \\
 }
 
-\newcommand\emptySeparator{
-   & \\ 
-}
-
 % Define the 'internships' environment
 \newlength{\leftIntern}
-\setlength{\leftIntern}{1.5cm}
+\setlength{\leftIntern}{1.0cm}
 \newlength{\rightIntern}
 \setlength{\rightIntern}{8.0cm}
 \newcolumntype{X}[1]{>{\hfill}m{#1}}
@@ -268,14 +264,14 @@
 
 % \education
 % {time}{degree}
-% {location}{school}
+% {school}
 %
 % \internship
 % {time}{title}
-% {location}{company}
-\newcommand\internship[4]{
+% {company}
+\newcommand\internship[3]{
     \textbf{\large #1} & \textbf{\large{#2}} \\*
-     \text{\large #3}  & \text{\large #4} \\*
+                       & \text{\large #3} \\*
 }
 
 \newcommand*\twocolumnsection[2]{
